@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+common
+-------------------------------------------*/
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #2b2a27;
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2b2a27;
+}
+
+.page_title {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.content_title {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin: 40px 0 15px;
+}
+
+/*-------------------------------------------
+flex
+-------------------------------------------*/
+#flex {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+    /*-------------------------------------------
+    image
+    -------------------------------------------*/
+    #flex .image {
+      width: 50%;
+    }
+
+    #flex .image img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      vertical-align: bottom;
+    }
+
+    /*-------------------------------------------
+    recipe
+    -------------------------------------------*/
+    #flex .recipe {
+      width: 50%;
+      padding: 40px 5% 0 5%;
+    }
+
+        /*-------------------------------------------
+        ingredient(材料)
+        -------------------------------------------*/
+        #flex .recipe .ingredient dl {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        #flex .recipe .ingredient dt,
+        #flex .recipe .ingredient dd {
+          width: 50%;
+          border-bottom: 1px dotted #ccc;
+          padding: 6px 0;
+        }
+
+        #flex .recipe .ingredient dd {
+          text-align: right;
+        }
+
+        /*-------------------------------------------
+        how(作り方)
+        -------------------------------------------*/
+        #flex .recipe .how li {
+          border-bottom: 1px dotted #ccc;
+          list-style-position: inside;
+          padding: 6px 0 ;
+        }
+
+
+/*-------------------------------------------
+link_btn
+-------------------------------------------*/
+#link_btn {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#link_btn a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: .875rem;
+  border: 1px solid #2b2a27;
+  padding: 18px 60px;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: .75rem;
+  padding: 20px;
+  text-align: center;
+}
+
+#footer .SNS_link {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#footer li {
+  margin: 0 10px ;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 834px) {
+
+/*-------------------------------------------
+flex
+-------------------------------------------*/
+#flex {
+  flex-direction: column;
+}
+
+    /*-------------------------------------------
+    image
+    -------------------------------------------*/
+    #flex .image {
+      width: 100%;
+    }
+
+    #flex .image img {
+      height: 75vh;
+      object-fit: cover;
+      object-position: 0 80%;
+    }
+
+    /*-------------------------------------------
+    recipe
+    -------------------------------------------*/
+    #flex .recipe {
+      width: 100%;
+    }
+}
